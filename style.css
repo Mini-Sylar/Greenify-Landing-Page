@@ -327,10 +327,10 @@ img {
   .waves {
     top: 15.3%;
     bottom: 0;
-    margin-bottom: -15px;
+    /* margin-bottom: -15px; */
     /*Fix for safari gap*/
     min-height: 100vh;
-    max-height: 30em;
+    max-height: 100vh;
   }
   .left-side {
     padding: 0;
