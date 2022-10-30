@@ -17,13 +17,8 @@ body {
   line-height: 1.5;
   color: #333;
   background: #f4f4f4;
-  overflow: hidden;
 }
 
-html,
-body {
-  height: 100%;
-}
 body {
   background: radial-gradient(
     ellipse at center,
@@ -47,6 +42,12 @@ header {
   margin: 0 auto;
 }
 
+.mobile-logo,
+.hamburger,
+.nav-mobile,
+.first {
+  display: none;
+}
 .nav-bar {
   display: flex;
   justify-content: center;
@@ -295,9 +296,11 @@ img {
 }
 
 @media screen and (max-width: 500px) {
-
   .hero-container {
     flex-direction: column;
+    min-height: 100vh;
+    /* background-color: springgreen; */
+    margin-top: 5rem;
   }
 
   .hero-title {
@@ -330,15 +333,15 @@ img {
     display: flex;
     position: absolute;
     height: min-content;
-    width: 60%;
-    top: 3%;
+    width: 30%;
+    /* top: 3%; */
     z-index: 10;
   }
   .mobile-logo > a {
     height: min-content;
   }
   .mobile-logo > img {
-    width: 80%;
+    width: 20%;
     height: max-content;
     object-fit: contain;
   }
@@ -346,7 +349,7 @@ img {
   .nav-mobile {
     width: 0;
     height: 100vh;
-    background-color: var(--main-hero-color);
+    background-color: #333;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -360,11 +363,12 @@ img {
     overflow: hidden;
   }
   .first {
+    display: block;
     content: "";
     position: absolute;
     width: 10%;
     height: 100vh;
-    background-color: var(--main-accent-color);
+    background-color: var(--accent-color);
     z-index: 3;
     right: 0;
     visibility: hidden;
@@ -372,7 +376,7 @@ img {
   }
   .nav-mobile > a {
     font-family: var(--main-font-bold);
-    color: var(--main-hero-background);
+    color: #fff;
     font-size: 25px;
     font-weight: 900;
     transition: all 1s ease-in;
@@ -390,7 +394,7 @@ img {
     width: 50px;
     height: 45px;
     position: absolute;
-    margin: 10px auto;
+    margin: 20px auto;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
