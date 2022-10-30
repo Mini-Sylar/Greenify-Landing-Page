@@ -39,6 +39,10 @@ a:visited {
   color: #333;
 }
 
+.hero-section {
+  height: 100%;
+  overflow: hidden;
+}
 header {
   width: min(90%, 1400px);
   margin: 0 auto;
@@ -231,6 +235,7 @@ img {
   height: 100%;
   object-fit: cover;
   border-radius: 1rem;
+  transition: all 0.5s ease;
 }
 
 .img-3 {
@@ -255,11 +260,7 @@ img {
   position: absolute;
   width: 100%;
   overflow: hidden;
-  /* top: 57.3%; */
-  bottom: 0;
-  margin-bottom: -15px;
-  /*Fix for safari gap*/
-  min-height: 90vh;
+  min-height: 100vh;
   max-height: 30em;
   z-index: -1;
 }
@@ -320,15 +321,12 @@ img {
   .hero-container {
     flex-direction: column;
     height: 100%;
-    /* background-color: springgreen; */
     margin-top: 5rem;
     overflow: hidden;
+    min-height: 100vh;
   }
   .waves {
-    /* top: 35.3%; */
-    bottom: -5%;
-    /* margin-bottom: -15px; */
-    /*Fix for safari gap*/
+    top: 20%;
     min-height: 100vh;
     max-height: 100vh;
     overflow: hidden;
@@ -360,13 +358,27 @@ img {
   .nav-container {
     display: none;
   }
+  .grid-1 {
+    display: none;
+  }
 
   .grid-2 {
-    height: 60%;
+    height: 100%;
     width: 80%;
     margin: 0 auto;
   }
+
+  .img-2 {
+    height: 100%;
+    overflow: hidden;
+  }
+  .img-2 > img {
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
   .img-3 {
+    height: 100%;
     margin: 0 auto;
   }
   .mobile-logo {
@@ -509,9 +521,9 @@ img {
 .subject-2:hover {
   cursor: pointer;
   transition: all 0.3s ease-in;
-  box-shadow: -5px -5px 15px var(--main-accent-color),
-    5px 5px 20px var(--main-accent-color);
-  transform: scale(1.2) rotate(-1deg);
+  box-shadow: -5px -5px 15px var(--accent-color),
+    5px 5px 20px var(--accent-color);
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 500px) {
