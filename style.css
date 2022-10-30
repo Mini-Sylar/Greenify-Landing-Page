@@ -274,8 +274,8 @@ img {
   bottom: 0;
   /* margin-bottom: -7px; */
   /*Fix for safari gap*/
-  min-height: 400px;
-  max-height: 150px;
+  min-height: 30em;
+  max-height: 15em;
   z-index: -1;
 }
 
