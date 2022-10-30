@@ -110,6 +110,7 @@ main {
   top: -20%;
   right: 0;
   opacity: 1;
+  
   /* height: 100rem; */
 }
 .hero-container {
@@ -254,30 +255,66 @@ img {
 .ocean {
   height: 20%;
   width: 100%;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   background: #c4ecee;
   z-index: -1;
   opacity: 1;
 }
-
-.wave {
-  background: url(./images/wave.svg) repeat-x;
+.waves {
   position: absolute;
-  top: -198px;
-  width: 1200vw;
-  height: 198px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
-  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  top: 70%;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 300px;
+  max-height: 150px;
+  z-index: -1;
 }
 
-.wave:nth-of-type(2) {
-  top: -175px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
-    swell 7s ease -1.25s infinite;
-  opacity: 1;
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
 }
 
 .nav-links > ul > li > a:after {
@@ -332,7 +369,7 @@ img {
   }
 
   .img-3 {
-    display: none;
+    width: 100%;
   }
   .mobile-logo {
     display: flex;
@@ -463,6 +500,11 @@ img {
     -moz-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
+  }
+
+  .wave {
+    width: 300vmin;
+    overflow: hidden;
   }
 }
 
