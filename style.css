@@ -526,3 +526,10 @@ img {
     width: 30%;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .waves {
+    margin-bottom: -1rem;
+    top: 53%;
+  }
+}
