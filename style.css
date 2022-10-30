@@ -271,6 +271,7 @@ img {
   width: 100%;
   overflow: hidden;
   top: 55%;
+  bottom: 0;
   /* margin-bottom: -7px; */
   /*Fix for safari gap*/
   min-height: 400px;
