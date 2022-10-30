@@ -270,7 +270,7 @@ img {
   position: absolute;
   width: 100%;
   overflow: hidden;
-  top: 50%;
+  top: 55%;
   /* margin-bottom: -7px; */
   /*Fix for safari gap*/
   min-height: 400px;
