@@ -254,12 +254,12 @@ img {
   position: absolute;
   width: 100%;
   overflow: hidden;
-  top: 55%;
+  top: 57.3%;
   bottom: 0;
-  margin-bottom: -12px;
+  margin-bottom: -15px;
   /*Fix for safari gap*/
-  min-height: 40em;
-  max-height: 20em;
+  min-height: 21em;
+  max-height: 30em;
   z-index: -1;
 }
 
