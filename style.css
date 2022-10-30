@@ -374,9 +374,11 @@ img {
     overflow: hidden;
   }
   .img-2 > img {
-    height: 100%;
+    height: 80%;
+    width: 100%;
+    margin: 0 auto;
     border-radius: 1rem;
-    object-fit: cover;
+    object-fit: contain;
   }
   .img-3 {
     height: 100%;
