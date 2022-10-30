@@ -127,7 +127,7 @@ main {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 .hero-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
