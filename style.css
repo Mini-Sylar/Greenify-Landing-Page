@@ -326,12 +326,16 @@ img {
   left: 0;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1180px) {
   .hero-container {
     flex-direction: column;
     min-height: 100vh;
     /* background-color: springgreen; */
     margin-top: 5rem;
+    overflow: hidden;
+  }
+  .waves {
+    top: 70%;
   }
   .left-side {
     padding: 0;
@@ -373,7 +377,7 @@ img {
     display: flex;
     position: absolute;
     height: min-content;
-    width: 30%;
+    width: 10%;
     /* top: 3%; */
     z-index: 10;
   }
@@ -503,6 +507,12 @@ img {
   .wave {
     width: 300vmin;
     overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mobile-logo {
+    width: 30%;
   }
 }
 
