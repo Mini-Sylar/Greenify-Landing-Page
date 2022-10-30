@@ -319,18 +319,19 @@ img {
 @media screen and (max-width: 1180px) {
   .hero-container {
     flex-direction: column;
-    min-height: 100vh;
+    height: 100%;
     /* background-color: springgreen; */
     margin-top: 5rem;
     overflow: hidden;
   }
   .waves {
-    top: 35.3%;
-    bottom: -1%;
+    /* top: 35.3%; */
+    bottom: -5%;
     /* margin-bottom: -15px; */
     /*Fix for safari gap*/
     min-height: 100vh;
     max-height: 100vh;
+    overflow: hidden;
   }
   .left-side {
     padding: 0;
