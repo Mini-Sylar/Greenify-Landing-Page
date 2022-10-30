@@ -259,8 +259,8 @@ img {
   bottom: 0;
   margin-bottom: -7px;
   /*Fix for safari gap*/
-  min-height: 30em;
-  max-height: 15em;
+  min-height: 40em;
+  max-height: 20em;
   z-index: -1;
 }
 
@@ -325,7 +325,7 @@ img {
     overflow: hidden;
   }
   .waves {
-    top: 70%;
+    top: 40%;
   }
   .left-side {
     padding: 0;
@@ -361,14 +361,13 @@ img {
     margin: 0 auto;
   }
   .img-3 {
-    display: none;
+    margin: 0 auto;
   }
   .mobile-logo {
     display: flex;
     position: absolute;
     height: min-content;
     width: 10%;
-    /* top: 3%; */
     z-index: 10;
   }
   .mobile-logo > a {
