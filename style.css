@@ -257,7 +257,7 @@ img {
   overflow: hidden;
   top: 55%;
   bottom: 0;
-  margin-bottom: -7px;
+  margin-bottom: -12px;
   /*Fix for safari gap*/
   min-height: 40em;
   max-height: 20em;
@@ -325,7 +325,7 @@ img {
     overflow: hidden;
   }
   .waves {
-    top: 40%;
+    top: 45%;
   }
   .left-side {
     padding: 0;
