@@ -510,11 +510,6 @@ img {
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
   }
-
-  .wave {
-    width: 300vmin;
-    overflow: hidden;
-  }
 }
 
 .img-3 > img:hover,
