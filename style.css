@@ -110,7 +110,7 @@ main {
   top: -20%;
   right: 0;
   opacity: 1;
-  
+
   /* height: 100rem; */
 }
 .hero-container {
@@ -136,7 +136,7 @@ main {
 }
 
 .hero-body {
-  font-size: clamp(0.5rem, 1.5vw, 1rem);
+  font-size: clamp(13px, 14px, 18px);
   font-weight: 600;
   width: 50ch;
 }
@@ -265,20 +265,13 @@ img {
 .waves {
   position: absolute;
   width: 100%;
-  height: 100vh;
-  top: 70%;
-  margin-bottom: -7px;
+  overflow: hidden;
+  top: 50%;
+  /* margin-bottom: -7px; */
   /*Fix for safari gap*/
-  min-height: 300px;
+  min-height: 400px;
   max-height: 150px;
   z-index: -1;
-}
-
-.content {
-  position: relative;
-  height: 20vh;
-  text-align: center;
-  background-color: white;
 }
 
 /* Animation */
@@ -368,8 +361,13 @@ img {
     display: none;
   }
 
+  .grid-2 {
+    height: 60%;
+    width: 80%;
+    margin: 0 auto;
+  }
   .img-3 {
-    width: 100%;
+    display: none;
   }
   .mobile-logo {
     display: flex;
