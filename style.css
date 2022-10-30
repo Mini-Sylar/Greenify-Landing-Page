@@ -127,7 +127,7 @@ main {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  /* padding: 1rem; */
+  padding: 1rem;
 }
 .hero-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
@@ -259,10 +259,11 @@ img {
 .waves {
   position: absolute;
   width: 100%;
-  overflow: hidden;
-  min-height: 100vh;
-  max-height: 30em;
+  top: 50%;
+  min-height: 50vh;
+  max-height: 20em;
   z-index: -1;
+  overflow: hidden;
 }
 
 /* Animation */
