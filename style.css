@@ -253,7 +253,6 @@ img {
   align-self: flex-start;
   width: 70%;
   height: 20%;
-  /* background-color: #0055af; */
   border-radius: 1rem;
 }
 .ocean {
@@ -272,7 +271,7 @@ img {
   overflow: hidden;
   top: 55%;
   bottom: 0;
-  /* margin-bottom: -7px; */
+  margin-bottom: -7px;
   /*Fix for safari gap*/
   min-height: 30em;
   max-height: 15em;
@@ -518,24 +517,5 @@ img {
 @media screen and (max-width: 500px) {
   .mobile-logo {
     width: 30%;
-  }
-}
-
-@keyframes wave {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -1600px;
-  }
-}
-
-@keyframes swell {
-  0%,
-  100% {
-    transform: translate3d(0, -25px, 0);
-  }
-  50% {
-    transform: translate3d(0, 5px, 0);
   }
 }
