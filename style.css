@@ -114,6 +114,7 @@ main {
   width: min(90%, 1400px);
   margin: 0 auto;
   display: flex;
+  height: 90%;
   min-height: 90vh;
   overflow: hidden;
 }
@@ -254,11 +255,11 @@ img {
   position: absolute;
   width: 100%;
   overflow: hidden;
-  top: 57.3%;
+  /* top: 57.3%; */
   bottom: 0;
   margin-bottom: -15px;
   /*Fix for safari gap*/
-  min-height: 21em;
+  min-height: 90vh;
   max-height: 30em;
   z-index: -1;
 }
@@ -324,7 +325,12 @@ img {
     overflow: hidden;
   }
   .waves {
-    top: 45%;
+    top: 15.3%;
+    bottom: 0;
+    margin-bottom: -15px;
+    /*Fix for safari gap*/
+    min-height: 100vh;
+    max-height: 30em;
   }
   .left-side {
     padding: 0;
